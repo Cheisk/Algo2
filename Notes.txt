@@ -1,0 +1,31 @@
+[] c'est pour les tableaux
+{} c'est pour les objets
+i,j sont les indices permettant de parcourir les tableaux Tab1,Tab2
+Boolean est un type comme integer et nous permet de simplement verifier si Tab1 et Tab2 sont identiques 
+Recois ==
+IF IF cest imbriqué
+=== verifie si les egalité sont vrai 
+élements distincs c'est ceux differents 
+élements qui se chevauchent c'est ceux qui se resembles
+Pour declarer une table de hashage
+  htab : HASH_TABLE<INTEGER,STRING>;
+         [HASH_TABLE<Key_type,Value_type>]        
+la table de hashage est composé de deux choses une clée et une valeur 
+La clé representer en Integer et la valeur selon
+
+htab.insert(0"zero")
+htab.insert(1"one")
+htab.insert(2"Two")
+htab.insert(3"Three)
+Write(htab) permet dafficher ceux qui est dans est parenthese.
+
+htab.lookup(?) permet de verifier si l'indice existe 
+? represente l'indice  
+.get(?) permet de recuperer l'element apartenant a l'indice ?
+l'element dans l'exemple 1 est "zero"
+.delete
+A chaque fois qu'on insert un nouvelle element sur un indice lancien n'est plus pris en  compte c le dernier element inserer qui prend la place
+i est un iterateur il permet de parcourir lensemble ou le 
+Je peut initialiser 
+
+

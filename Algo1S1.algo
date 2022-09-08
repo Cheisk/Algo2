@@ -1,0 +1,42 @@
+ALGORITHM Algo1Solution1
+VAR
+    Tab1 : ARRAY_OF INTEGER[6];
+    Tab2 : ARRAY_OF INTEGER[5];
+    i,j,som : INTEGER;
+    Verify : BOOLEAN;
+
+BEGIN 
+
+//Donner des valeurs au tab1
+    Tab1 := {1,3,5,7,9,6}
+    //Donner des valeurs au tab2
+    Tab2 := {1,4,2,9,6}
+    //donnez a la variable Verify la reponce False
+    Verify := False
+    // initialiser som a la valeur 0
+    som := 0
+// Parcours i de 0 a la limite de Tab1
+    FOR i FROM 0 TO Tab1.length-1 STEP 1  DO
+       FOR j FROM 0 TO Tab2.length-1 STEP 1 DO
+            IF (Tab1[i]<>Tab2[j]) THEN
+                Verify = True
+            END_IF
+       END_FOR
+       IF (Verify === True) THEN
+        som = som + Tab1[i]
+       END_IF
+    END_FOR 
+
+    FOR j FROM 0 TO Tab2.length-1 STEP 1  DO
+        FOR i FROM 0 TO Tab1.length-1 STEP 1  DO
+            IF (Tab2[j]<>Tab1[i]) THEN
+                Verify == True
+            END_IF
+        END_FOR
+         IF (Verify === True) THEN
+          som = som + Tab2[j]
+         END_IF
+    END_FOR
+    write(som)   
+    
+END

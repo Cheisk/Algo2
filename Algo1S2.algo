@@ -1,0 +1,35 @@
+ALGORITHM Algo1Solution2
+VAR
+    Htab1 : HASH_TABLE<INTEGER,INTEGER>
+    Htab2 : HASH_TABLE<INTEGER,INTEGER>
+    i,j,som : INTEGER;
+    elements,elements1 : STRING;
+    Verify : BOOLEAN;
+BEGIN
+      Htab1 : HASH_TABLE<INTEGER,INTEGER>
+     Htab1.insert(0,7)
+     Htab1.insert(1,4)
+     Htab1.insert(2,23)
+     Htab1.insert(3,12)
+     Htab1.insert(4,1)  
+      Htab2 : HASH_TABLE<INTEGER,INTEGER>
+     Htab2.insert(0,4)
+     Htab2.insert(1,9)
+     Htab2.insert(2,20)
+     Htab2.insert(3,7)
+     Htab2.insert(4,15)
+     elements := Htab1.get(i)
+     elements1 := Htab2.get(j)
+     FOR i FROM 0 TO Htab1.l::ength-1 STEP 1  DO
+        IF (Htab2.search(elements)) THEN
+            Verify = False
+            som = som + elements
+        END_IF
+     END_FOR
+     FOR j FROM 0 TO Htab2.length-1 STEP 1  DO
+        IF (Htab1.search(elements1)) THEN
+            Verify = False
+            som = som + elements1
+        END_IF
+     END_FOR
+END

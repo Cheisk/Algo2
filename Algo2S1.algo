@@ -1,0 +1,24 @@
+ALGORITHM Algo1Solution2
+VAR
+    Tab1 : ARRAY_OF INTEGER[8];
+    Tab2 : ARRAY_OF INTEGER[7];
+    i,j,som : INTEGER;
+    Verify : BOOLEAN;
+
+BEGIN
+   Tab1 :={1,6,8,12,16,24,9,4}
+   Tab2 :={6,4,12,5,7,3,26}
+    Verify := False
+    som := 0
+     FOR i FROM 0 TO Tab1.length-1 STEP 1  DO
+       FOR j FROM 0 TO Tab2.length-1 STEP 1 DO
+            IF (Tab1[i]=Tab2[j]) THEN
+                Verify = True
+            END_IF
+       END_FOR
+       IF (Verify === True) THEN
+        som = som+Tab1[i]+Tab2[j]
+       END_IF
+    END_FOR   
+    write(som)
+END
